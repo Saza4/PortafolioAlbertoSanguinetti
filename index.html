@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0 user-scalable=no"
+    />
+    <link rel="stylesheet" href="estilo.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=code,stadia_controller,database,deployed_code,memory,video_template,menu"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Alberto Sanguinetti - Portafolio</title>
+  </head>
+
+  <body>
+    <section id="inicio">
+      <div class="contenido">
+        <header>
+          <div class="contenido-header">
+            <a href="#inicio"
+              ><img src="img/logo.svg" alt="" width="35px" height="35px"
+            /></a>
+            <nav id="nav" class="">
+              <ul id="links" style="margin-left: 1px">
+                <li>
+                  <a
+                    href="#inicio"
+                    class="seleccionado"
+                    onclick="seleccionar(this)"
+                    >INICIO</a
+                  >
+                </li>
+                <li>
+                  <a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a>
+                </li>
+                <li>
+                  <a href="#servicios" onclick="seleccionar(this)">SERVICIOS</a>
+                </li>
+                <li>
+                  <a href="#portfolio" onclick="seleccionar(this)"
+                    >PORTAFOLIO</a
+                  >
+                </li>
+                <li>
+                  <a href="#contacto" onclick="seleccionar(this)">CONTACTO</a>
+                </li>
+              </ul>
+            </nav>
+
+            <div id="icono-nav" onclick="responsiveMenu()">
+              <span class="material-symbols-outlined"> menu </span>
+            </div>
+
+            <div class="redes"></div>
+          </div>
+        </header>
+        <div class="presentacion">
+          <p class="bienvenida">Bienvenidos</p>
+          <h2>
+            Soy <span>Alberto Sanguinetti</span> - Desarrollador Full Stack,
+            Desarrollador de Videojuegos y Entornos Virtuales
+          </h2>
+          <p class="descripcion" style="font-style: italic">
+            "Construyendo plataformas escalables, automatizando procesos con
+            impacto e innovando en la creación de experiencias digitales."
+          </p>
+          <a href="#portfolio">Ir a Portafolio</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobremi">
+      <div class="contenedor-foto">
+        <img src="img/me.jpeg" alt="" />
+      </div>
+      <div class="sobremi">
+        <p class="titulo-seccion">Sobre Mi</p>
+        <h2>Hola, Soy <span>Alberto Sanguinetti</span></h2>
+        <h3>
+          Desarrollador Full Stack, Desarrollador de Videojuegos y Entornos
+          Virtuales
+        </h3>
+        <p>
+          Técnico Superior Universitario e Ingeniero en Entornos Virtuales y
+          Negocios Digitales, Desarrollador Full-Stack con experiencia en la
+          arquitectura de plataformas web escalables y con conocimientos en la
+          Programación destinada a Videojuegos, Entornos Interactivos (Unity
+          2D/3D, Blender), Tecnologías Web (Laravel, React, NestJS, TypeScript),
+          Digitalización de Procesos, Gestión de Bases de Datos, DevOps (Docker,
+          Git) y Edición de Video (Adobe Premiere, Adobe After Effects, Vegas
+          Pro), creando proyectos para fines propios y académicos.
+        </p>
+        <p>
+          Busco potenciar mi desempeño profesional aportando mis habilidades en
+          desarrollo Full-Stack (Laravel, React, NestJS, TypeScript) y la
+          creación de entornos interactivos (Unity con C#, Blender). Mi objetivo
+          es diseñar plataformas web escalables, optimizar la gestión y
+          visualización de datos mediante herramientas como Apache Superset,
+          PostgreSQL, phpmyadmin, MySQL Workbench, para lograr resultados
+          finales que cumplan con los requerimientos técnicos y los objetivos de
+          los proyectos o clientes con los que trabajo.
+        </p>
+        <a
+          href="pdf/CV_Alberto Sanguinetti Zavala_ES.pdf"
+          download="CV_Alberto Sanguinetti Zavala"
+          >Descargar CV (Español)</a
+        >
+        <a
+          href="pdf/CV_Alberto Sanguinetti Zavala_ENG.pdf"
+          download="CV_Alberto Sanguinetti Zavala"
+          >Download CV (English)</a
+        >
+        <!-- Falta agregar el link del demo 
+        <a href="https://www.youtube.com/watch?v=txjclIsLWno" target="_blank"
+          >Ver Demo Reel</a
+        > -->
+      </div>
+    </section>
+
+    <section id="servicios">
+      <h3 class="titulo-seccion">MIS SERVICIOS</h3>
+      <div class="fila">
+        <div class="servicio">
+          <span class="icono">
+            <span class="material-symbols-outlined">code</span>
+          </span>
+          <h4>Desarrollo Full-Stack</h4>
+          <hr />
+          <p>
+            Arquitectura de plataformas web escalables y ecosistemas SaaS.
+            Desarrollo de lógica de negocio, APIs REST y sistemas automatizados
+            utilizando Laravel, React, Next.js y NestJS.
+          </p>
+        </div>
+        <div class="servicio">
+          <span class="icono">
+            <span class="material-symbols-outlined"> stadia_controller </span>
+          </span>
+          <h4>Entornos Interactivos y Videojuegos</h4>
+          <hr />
+          <p>
+            Diseño y programación de mecánicas de juego 2D y 3D utilizando Unity
+            (C#) con enfoque en la experiencia de usuario (UX), integrando
+            activos optimizados creados en Blender.
+          </p>
+        </div>
+        <div class="servicio">
+          <span class="icono">
+            <span class="material-symbols-outlined"> database </span>
+          </span>
+          <h4>Analítica de Datos</h4>
+          <hr />
+          <p>
+            Estructuración de bases de datos complejas (MySQL, PostgreSQL) y
+            desarrollo de tableros de control con Apache Superset para la
+            visualización de métricas y toma de decisiones en tiempo real.
+          </p>
+        </div>
+      </div>
+      <div class="fila">
+        <div class="servicio">
+          <span class="icono">
+            <span class="material-symbols-outlined"> deployed_code </span>
+          </span>
+          <h4>DevOps & Despliegue</h4>
+          <hr />
+          <p>
+            Orquestación del ciclo de vida del desarrollo de software (SDLC) e
+            integración continua. Estandarización de control de versiones y
+            entornos mediante el uso de Git/GitHub y Docker.
+          </p>
+        </div>
+        <div class="servicio">
+          <span class="icono">
+            <span class="material-symbols-outlined"> memory </span>
+          </span>
+          <h4>Optimización de Hardware</h4>
+          <hr />
+          <p>
+            Diagnóstico, resolución de fallas y aumento del rendimiento
+            operativo de equipos de cómputo hasta en un 40% mediante la
+            actualización estratégica de componentes.
+          </p>
+        </div>
+        <div class="servicio">
+          <span class="icono">
+            <span class="material-symbols-outlined"> video_template </span>
+          </span>
+          <h4>Edición de Video</h4>
+          <hr />
+          <p>
+            Desarrollo ideas innovadoras a historias a través de un software de
+            edición. Desarrollo producciones audiovisuales para fines personales
+            o publicitarios, utilizando Adobe Premiere, Adobe After Effects y
+            Vegas Pro.
+          </p>
+        </div>
+      </div>
+    </section>
+    <br /><br /><br /><br /><br />
+
+    <!-- SECCION PORTAFOLIO -->
+    <section id="portfolio">
+      <h3 class="titulo-seccion">Videojuegos</h3>
+      <div class="fila">
+        <div class="proyecto">
+          <a href="https://alsaza.itch.io/can-stand" target="_blank">
+            <div class="overlay"></div>
+            <img src="img/canstand.png" alt="" />
+            <div class="info">
+              <h4>Can Stand?</h4>
+              <p>
+                Experiencia divertida y entretenida para todos los jugadores -
+                2023.
+              </p>
+            </div>
+          </a>
+        </div>
+        <div class="proyecto">
+          <a href="https://alsaza.itch.io/foodpocalypse" target="_blank">
+            <div class="overlay"></div>
+            <img src="img/foodpocalypse.png" alt="" />
+            <div class="info">
+              <h4>Foodpocalypse</h4>
+              <p>La comida es más importante de lo que piensas - 2025.</p>
+            </div>
+          </a>
+        </div>
+        <!-- 
+        Platilla para agregar un nuevo proyecto 
+        <div class="proyecto">
+          <a href="https://gaspar-valdez.itch.io/el-ltimo-piso" target="_blank">
+            <div class="overlay"></div>
+            <img src="img/proyecto15.png" alt="" />
+            <div class="info">
+              <h4>El Último Piso</h4>
+              <p>No querrás ver lo que se encuentra ahí...</p>
+            </div>
+          </a>
+        </div>
+        -->
+      </div>
+    </section>
+
+    <br /><br /><br /><br /><br />
+    <!-- SECCION PORTAFOLIO -->
+    <section id="portfolio">
+      <h3 class="titulo-seccion">Servicios web</h3>
+      <div class="fila">
+        <div class="proyecto">
+          <a href="https://transporteyucatan.org.mx/" target="_blank">
+            <div class="overlay"></div>
+            <img src="img/logo-ATY.svg" alt="" />
+            <div class="info">
+              <h4>Generador de archivos GTFS</h4>
+              <p>
+                Gestiona la información GTFS (General Transit Feed
+                Specification, o Especificación General de Fuentes de Tránsito)
+                de la agencia de transporte público ATY Mérida, Yucatán.
+                (Plataforma interna o privada.
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <div class="proyecto">
+          <a href="https://gaspar-valdez.itch.io/safari-ar" target="_blank">
+            <div class="overlay"></div>
+            <img src="img/MI.png" alt="" />
+            <div class="info">
+              <h4>"MI"</h4>
+              <p>Plataforma SaaS de Orientación Vocacional & EdTech</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 
+
+    SECCION DE VIDEOS PENDIENTES 
+
+    <br /><br /><br /><br /><br />
+    <section id="portfolio">
+      <h3 class="titulo-seccion">Videos Editados</h3>
+      <div class="fila">
+        <div class="proyecto">
+          <a href="https://acortar.link/wiVg1J" target="_blank">
+            <div class="overlay"></div>
+            <img src="img/proyecto11.png" alt="" />
+            <div class="info">
+              <h4>Thanksgiving: The First Harvest of October</h4>
+              <p>
+                ¡Una interpretación animada sobre la historia del Día de Acción
+                de Gracias!
+              </p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    -->
+
+    <br /><br /><br /><br /><br />
+    <section id="contacto">
+      <h3 class="titulo-seccion">Contáctame</h3>
+      <div class="contenedor-form">
+        <form
+          id="contact-form"
+          action="https://formsubmit.co/albertosanguinetti0@gmail.com"
+          method="POST"
+        >
+          <div class="fila mitad">
+            <input
+              type="text"
+              placeholder="Escribe tu nombre completo..."
+              class="input-mitad"
+              name="name"
+              required
+            />
+            <input
+              type="email"
+              placeholder="Escribe tu correo electrónico..."
+              class="input-mitad"
+              name="email"
+              required
+            />
+          </div>
+          <div class="fila">
+            <input
+              type="text"
+              placeholder="Escribe el asunto..."
+              class="input-full"
+              name="subject"
+              required
+            />
+          </div>
+          <div class="fila">
+            <textarea
+              name="comments"
+              cols="30"
+              rows="10"
+              placeholder="Escribe tu mensaje (puedes incluir tu número de teléfono)..."
+              class="input-full"
+              required
+            ></textarea>
+          </div>
+
+          <input
+            type="submit"
+            value="Enviar mensaje"
+            class="btn-enviar"
+            id="submitBtn"
+          />
+
+          <input
+            type="hidden"
+            name="_next"
+            value="https://gasparvaldez.github.io/PortafolioGasparValdez/"
+          />
+          <input type="hidden" name="_captcha" value="false" />
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <p>Alberto Sanguinetti - 2026</p>
+      <div class="redes-footer">
+        <a href="https://alsaza.itch.io" target="_blank"
+          ><i class="fa-brands fa-itch-io"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/alberto-sanguinetti-zavala-45732a418/"
+          target="_blank"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a href="mailto:albertosanguinetti0@gmail.com" target="_blank"
+          ><i class="fa-regular fa-envelope"></i
+        ></a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var form = document.getElementById("contact-form");
+
+        form.addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          var nameInput = form.elements["name"];
+          var emailInput = form.elements["email"];
+          var subjectInput = form.elements["subject"];
+          var commentsInput = form.elements["comments"];
+
+          // Validar campos vacíos
+          if (
+            nameInput.value.trim() === "" ||
+            emailInput.value.trim() === "" ||
+            subjectInput.value.trim() === "" ||
+            commentsInput.value.trim() === ""
+          ) {
+            alert("Por favor, completa todos los campos del formulario.");
+            return;
+          }
+
+          // Validar formato del email con regex simple
+          var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+          if (!emailRegex.test(emailInput.value.trim())) {
+            alert("Por favor, ingresa un correo electrónico válido.");
+            emailInput.focus();
+            return;
+          }
+
+          // Mostrar mensaje de éxito antes de enviar
+          alert("¡Datos enviados! ¡Gracias por ponerte en contacto conmigo!");
+
+          // Enviar formulario (se hace después del alert para que el usuario pueda verlo)
+          form.submit();
+        });
+      });
+    </script>
+  </body>
+</html>
